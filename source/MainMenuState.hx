@@ -268,6 +268,10 @@ class MainMenuState extends MusicBeatState
 				FlxTween.tween(titleCharacter,{x: 200}, 8, {ease: FlxEase.quartOut});
 				canMove = true;
 			});
+			
+	  #if android
+	  addVirtualPad(UP_DOWN, A_B);
+	  #end
 
 		super.create();
 	}
