@@ -35,11 +35,11 @@ class SpoilerState extends MusicBeatState
 		super.create();
 		
 		var txt:FlxText = new FlxText(0, 0, FlxG.width,
-			"THIS MOD CONTAINS SPOILERS AND FLASHING LIGHTS\n"
-			+ "This mod has SPOILERS for the 'Madoka Magica' series.\n"
+			"ESTE MOD CONTÉM SPOILERS E LUZES PISCANTES\n"
+			+ "Este mod contém SPOILERS da série 'Madoka Magica'.\n"
 			+ "\n"
-			+ "This mod also has FLASHING LIGHTS from additional content!\n"
-			+ "Press ENTER to go into the settings, or ESC to ingore this warning.\n",
+			+ "Este mod também possui LUZES PISCANDO de conteúdo adicional!\n"
+			+ "Pressione A para entrar nas configurações ou B para ignorar este aviso.\n",
 			32);
 		txt.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, CENTER);
 		txt.screenCenter();
