@@ -34,6 +34,7 @@ class OptionsMenu extends MusicBeatState
 		]),
 
 		new OptionCatagory("Gameplay", [
+			new AndroidControls(),
 			new DFJKOption(controls),
 			new Judgement("Customize your Hit Timings (LEFT or RIGHT)"),
 			#if desktop
@@ -64,9 +65,9 @@ class OptionsMenu extends MusicBeatState
 		
 		new OptionCatagory("Misc", [
 			#if desktop
-			new FPSOption("Toggle the FPS Counter"),
 			new ReplayOption("View replays"),
 			#end
+			new FPSOption("Toggle the FPS Counter"), //teste
 			new WatermarkOption("Turn off all watermarks from the engine.")
 			
 		])
@@ -110,6 +111,10 @@ class OptionsMenu extends MusicBeatState
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
+		
+		#if android
+		addVirtualPad(FULL, A_B);
+		#end
 
 		super.create();
 	}
