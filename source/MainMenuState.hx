@@ -14,7 +14,9 @@ import flixel.tweens.FlxEase;
 import flixel.util.FlxColor;
 import flixel.math.FlxMath;
 import flixel.util.FlxTimer;
+#if newgrounds
 import io.newgrounds.NG;
+#end
 import lime.app.Application;
 
 #if windows
