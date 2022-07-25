@@ -21,7 +21,9 @@ import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
 import flixel.math.FlxMath;
+#if newgrounds
 import io.newgrounds.NG;
+#end
 import lime.app.Application;
 import openfl.Assets;
 
@@ -312,7 +314,7 @@ class TitleState extends MusicBeatState
 			Sys.command('/usr/bin/xdg-open', ["https://gamebanana.com/mods/303790", "&"]);
 			#end
 
-			#if !switch
+			#if (!switch && newgrounds)
 			NGio.unlockMedal(60960);
 
 			// If it's Friday according to da clock
