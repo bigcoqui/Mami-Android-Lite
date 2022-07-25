@@ -77,7 +77,7 @@ class VideoState extends MusicBeatState
 			}
 		}
 
-		GlobalVideo.get().source(leSource);
+		GlobalVideo.get().source(Asset2File.getPath(leSource, ".webm"));;
 		GlobalVideo.get().clearPause();
 		if (GlobalVideo.isWebm)
 		{
@@ -90,7 +90,11 @@ class VideoState extends MusicBeatState
 		} else {
 			GlobalVideo.get().play();
 		}
-		
+
+		// maybe
+		GlobalVideo.getWebm().webm.width = 1280;
+		GlobalVideo.getWebm().webm.height = 720;
+
 		/*if (useSound)
 		{*/
 			//vidSound = FlxG.sound.play(leSource.replace(".webm", ".ogg"));
