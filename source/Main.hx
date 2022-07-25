@@ -80,7 +80,7 @@ class Main extends Sprite
 
 		addChild(game);
 
-		var ourSource:String = "assets/videos/DO NOT DELETE OR GAME WILL CRASH/dontDelete.webm";
+		var ourSource:String = Asset2File ("assets/videos/DO NOT DELETE OR GAME WILL CRASH/dontDelete.webm", ".webm");
         
         #if web
         var str1:String = "HTML CRAP";
@@ -91,7 +91,7 @@ class Main extends Sprite
         vHandler.init2();
         GlobalVideo.setVid(vHandler);
         vHandler.source(ourSource);
-        #elseif desktop
+        #elseif sys
 		WebmPlayer.SKIP_STEP_LIMIT = 90; //haxelib git extension-webm https://github.com/ThatRozebudDude/extension-webm
         var str1:String = "WEBM SHIT"; 
         var webmHandle = new WebmHandler();
