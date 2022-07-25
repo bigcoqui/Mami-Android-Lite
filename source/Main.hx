@@ -80,7 +80,7 @@ class Main extends Sprite
 
 		addChild(game);
 
-		var ourSource:String = Asset2File ("assets/videos/DO NOT DELETE OR GAME WILL CRASH/dontDelete.webm", ".webm");
+		var ourSource:String = Asset2File.getPath("assets/videos/DO NOT DELETE OR GAME WILL CRASH/dontDelete.webm", ".webm");
         
         #if web
         var str1:String = "HTML CRAP";
