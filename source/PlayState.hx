@@ -500,7 +500,7 @@ class PlayState extends MusicBeatState
 		bfnoteMovementXoffset = 0;
 		bfnoteMovementYoffset = 0;
 
-		#if sys
+		#if desktop
 		executeModchart = FileSystem.exists(Paths.lua(PlayState.SONG.song.toLowerCase()  + "/modchart"));
 		#end
 		#if !cpp
@@ -3441,7 +3441,9 @@ class PlayState extends MusicBeatState
 
 					if (SONG.validScore)
 					{
+						#if newgrounds
 						NGio.unlockMedal(60961);
+						#end
 						Highscore.saveWeekScore(storyWeek, campaignScore, storyDifficulty);
 					}
 
