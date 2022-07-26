@@ -1256,6 +1256,11 @@ class PlayState extends MusicBeatState
 			
 	  #if android
 	  addAndroidControls();
+
+		if (SONG.song.toLowerCase() == 'salvation')
+		{
+		  addPad();
+		}
 	  #end
 
 		// if (SONG.song == 'South')
@@ -1519,6 +1524,7 @@ class PlayState extends MusicBeatState
 	{
 	  #if android
 	  androidc.visible = true;
+	  _pad.visible = true;
 	  #end
 
 		inCutscene = false;
@@ -3387,6 +3393,7 @@ class PlayState extends MusicBeatState
 			
 		#if android
 		androidc.visible = false;
+		_pad.visible = false;
 		#end
 
 		if (executeModchart)
