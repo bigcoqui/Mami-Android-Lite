@@ -3492,8 +3492,6 @@ class PlayState extends MusicBeatState
 					FlxG.sound.music.stop();
 					switch(SONG.song.toLowerCase())
 					{
-						case 'salvation':
-							LoadingState.loadAndSwitchState(new VideoState("assets/videos/Salvation_Finale.webm", new PlayState()));
 						default:
 							LoadingState.loadAndSwitchState(new PlayState());
 					}
