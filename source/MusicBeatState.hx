@@ -77,6 +77,7 @@ class MusicBeatState extends FlxUIState
 	}
 	#end
 
+	#if android
 	public function addPad()
 	{
 	  _pad = new FlxVirtualPad(NONE, A);
@@ -90,6 +91,7 @@ class MusicBeatState extends FlxUIState
 
 		add(_pad);
 	}
+	#end
 
 	#if android
   public function addPadCamera() {
