@@ -91,10 +91,6 @@ class VideoState extends MusicBeatState
 			GlobalVideo.get().play();
 		}
 
-		// maybe
-		GlobalVideo.getWebm().webm.width = 1280;
-		GlobalVideo.getWebm().webm.height = 720;
-
 		/*if (useSound)
 		{*/
 			//vidSound = FlxG.sound.play(leSource.replace(".webm", ".ogg"));
